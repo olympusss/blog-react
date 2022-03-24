@@ -37,6 +37,12 @@
     font-size: 18px;
     font-weight: 300;
     cursor: pointer;
+    padding: 16px;
+    margin: 0;
+}
+
+.topListItem:hover{
+    background-color: yellow;
 }
 
 .topListItem > a{

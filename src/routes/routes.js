@@ -5,15 +5,19 @@ import Home from "../pages/home/Home";
 import About from "../pages/about/About";
 import NotFound from "../pages/notFound";
 import history from "./history"
+import Contact from "../pages/contact/Contact";
+import Write from "../pages/write/Write"
+import Login from "../pages/login/Login";
+
 const RoutesComponent = ()=>{
     return(
-        // <Home/>
         <BrowserRouter history={history} >
             <Routes>
                 <Route path="/" element={<PrivateRoute element={<Home/>} />} />
                 <Route path="/about" element={<PrivateRoute element={<About/>} />} />
-
-
+                <Route path="/contact" element={<PrivateRoute element={<Contact/>} />} />
+                <Route path="/write" element={<PrivateRoute element={<Write/>} />} />
+                <Route path="/logout" element={<Login/>} />
                 <Route path="*" element={<NotFound/>} />
             </Routes>
         </BrowserRouter>
