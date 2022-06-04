@@ -1,9 +1,10 @@
-import React from "react";
-import { Link, Navigate } from "react-router-dom"
+import React,{useState} from "react";
+import { Link } from "react-router-dom"
 import "./topbar.css"
 
 
 export default function TopBar() {
+  const [active,setActive] = useState("home");
   return (
     <div className='top'>
         <div className="topLeft">
@@ -14,11 +15,11 @@ export default function TopBar() {
         </div>
         <div className="topCenter">
           <ul className="topList">
-            <li className="topListItem"><Link to="/">HOME</Link></li>
-            <li className="topListItem"><Link to="/about">ABOUT</Link></li>
-            <li className="topListItem"><Link to="/contact">CONTACT</Link></li>
-            <li className="topListItem"><Link to="/write">WRITE</Link></li>
-            <li className="topListItem"><Link to='/logout'>LOGOUT</Link></li>
+            <li onClick={()=>setActive("home")} className={`topListItem ${active==="home" && "active"}`}><Link to="/">HOME</Link></li>
+            <li onClick={()=>setActive("about")} className={`topListItem ${active==="about" && "active"}`}><Link to="/about">ABOUT</Link></li>
+            <li onClick={()=>setActive("contact")} className={`topListItem ${active==="contact" && "active"}`}><Link to="/contact">CONTACT</Link></li>
+            <li onClick={()=>setActive("write")} className={`topListItem ${active==="write" && "active"}`}><Link to="/write">WRITE</Link></li>
+            <li onClick={()=>localStorage.removeItem("Authentication") } className="topListItem"><Link to='/login'>LOGOUT</Link></li>
           </ul>
         </div>
         <div className="topRight">

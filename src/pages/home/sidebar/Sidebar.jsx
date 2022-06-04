@@ -1,6 +1,16 @@
+import React, { useState, useEffect } from 'react'
+import { axiosInstance } from '../../../utils/axiosInstance'
 import './sidebar.css'
 
 export default function Sidebar(props) {
+  // let [name, setName] = useState()
+  // useEffect(() => {
+  //   axiosInstance.get('/category-list/')
+  //   .then((res) =>{
+  //      console.log(res.data.body);
+  //      setName(res.data.body)
+  //     }).catch((err)=>console.log(err))
+  // },[])
   return (
     <div className='sidebar'>
       <div className="sidebarItem">
@@ -18,12 +28,17 @@ export default function Sidebar(props) {
       <div className="sidebarItem">
             <span className="sidebarTitle">CATEGORIES</span>
                 <ul className="sidebarList">
-                    <li onClick={()=>props.function("life")} className="sidebarListItem">Life</li>
-                    <li className="sidebarListItem">Music</li>
-                    <li className="sidebarListItem">Style</li>
-                    <li className="sidebarListItem">Sport</li>
-                    <li className="sidebarListItem">Tech</li>
-                    <li className="sidebarListItem">Cinema</li>
+                    
+                      {/* {name?.map((item)=>{
+                        return <li className="sidebarListItem"> {item.name} </li>
+                      })} */}
+                      <li className='sidebarListItem'>Music</li>
+                      <li className='sidebarListItem'>Life</li>
+                      <li className='sidebarListItem'>Sport</li>
+                      <li className='sidebarListItem'>Movie</li>
+                      <li className='sidebarListItem'>Cooking</li>
+                      <li className='sidebarListItem'>Others</li>
+                  
                 </ul>
       </div>
       <div className="sidebarItem">

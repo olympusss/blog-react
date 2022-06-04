@@ -1,3 +1,60 @@
 .about{
-    margin: 0;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.aboutTitle{
+    margin: auto;
+    font-family: 'Lora', serif;
+    color: #444;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.aboutItems{
+    margin-top: 20px;
+}
+
+.aboutImgItem{
+    width: 100vw;
+    display: flex;
+    background-color: #444
+}
+
+.aboutImg{
+    width: 60%;
+    height: 550px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 20px;
+    color: white;
+}
+
+.hello{
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.name{
+    font-size: 29px;
+    padding-top: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 150;
+
+}
+
+.aboutStory{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Varela Round' sans-serif;
+    font-size: 20px;
+    font-weight: 100;
 }

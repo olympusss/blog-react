@@ -1,0 +1,199 @@
+.contact{
+    /* background-color: #f7d13e; */
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.contactElemDivs{
+    height: 100vh;
+    margin: 30px 75px 55px;
+    background-color: #424242;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.elemLeft{
+    /* background-color: red; */
+    margin: auto;
+    width: 38%;
+    height: 85%;
+}
+
+.elemRight{
+    background-color: aliceblue;
+    margin: auto;
+    width: 35%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.leftTitle{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+
+}
+
+.titleTextOne{
+    font-size: 50px;
+    margin-top: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+}
+
+.titleTextTwo{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+}
+
+.leftSelects{
+    margin-top: 50px;
+    color: aliceblue;   
+}
+
+.selectElems{
+    width: 75%;
+    height: 10vh;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border:2px solid transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    color: #8f919e;
+
+}
+
+.selectElems:hover{
+    border:2px solid #f7d13e;
+}
+
+.elemIcon{
+    font-size: 18px;
+    line-height: 60px;
+    padding-right: 18px;
+    padding-left: 20px;
+}
+
+.elemText{
+    width: 75%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+
+.active{
+    border:2px solid #f7d13e;
+    color: #f7d13e;
+}
+
+.instagramm{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.twitter{
+    border-radius: 100px;
+    margin-left: 40px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.insIcon{
+    font-size: 25px;
+    padding-right: 10px;
+    padding-left: 14px;
+    padding-top: 12px;
+    color: #8f919e;
+}
+
+.IconActive{
+    background-color: #f7d13e;
+}
+
+.formElem{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.formElems{
+    width: 80%;
+    height: 10vh;
+    align-items: center;
+    margin-left: 40px;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #8f919e;
+}
+
+.formSms{
+    margin-left: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #8f919e;
+    margin-bottom: 10px;
+}
+
+.formInput{
+    width: 75%;
+    height: 40px;
+    line-height: 30px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+}
+
+.formIcon{
+    font-size: 18px;
+    line-height: 60px;
+    color: #8f919e;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+
+.buttonDiv{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+    height: 7vh;
+}
+
+.formButton{
+    width: 200px;
+    margin-right: 40px;
+    border-radius: 10px;
+    border: 1px solid #8f919e;
+    color: #8f919e;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.formButton:hover{
+    color: #f7d13e;
+    border: 1px solid #f7d13e;
+}

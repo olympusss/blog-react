@@ -1,4 +1,4 @@
-.loginBody{
+.registrationBody{
     background-color: #f7d13e;
     min-height: 100vh;
     width: 100%;
@@ -9,44 +9,36 @@
     flex-direction: column;
 }
 
-.login{
+.registration{
     min-width: 300px;
     width: 35vw;
-    height: 325px;
+    height: 500px;
     background-color: white;
     margin: 0px auto 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 5px 10px 18px #242424ad;
 }
 
-.loginIcon{
-    font-size: 18px;
-    line-height: 60px;
-    color: #8f919e;
-    padding-right: 18px;
-    padding-left: 20px;
-}
-
-.loginUsername{
+.registrationField{
     background-color: #dbdbdb;
     width: 75%;
     height: 60px;
     display: flex;
-    margin-bottom: 15px;
+    margin-top: 15px;
     align-items: center;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
-.loginInput{
-    width: 75%;
-    height: 60px;
+.registrationInput{
+    width: 87%;
+    height: 55px;
     line-height: 60px;
     font-size: 20px;
-    background-color: #dbdbdb;
+    background-color: transparent;
     border: none;
     color: black;
     outline: none;
@@ -54,41 +46,79 @@
     font-weight: 300;
 }
 
-.loginButton{
+.required{
+    color: red;
+    font-size: 18px;
+    line-height: 60px;
+    padding-left: 20px;
+    margin-top: -7px;
+}
+
+#emailreq{
+    visibility: hidden;
+}
+
+.registrationButton{
     background-color: #424242;
     width: 75%;
     height: 60px;
     display: flex;
-    margin-bottom: 20px;
+    margin-top: 15px;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    border: none;
     font-size: 18px;
     color: white;
     cursor: pointer;
     font-weight: 300;
     font-family: 'Josefin Sans', sans-serif;
-}
-
-.loginButton > a{
-    color: white;
-    text-decoration: none;
+    border: none;
 }
 
 
+.requiredInput {
+    border-color: black;
+}
 
-.loginRegistration{
+.requiredDiv{
+    border: 1px solid red;
+    background-color: rgba(252, 40, 40, 0.301)
+}
+
+.registrationLogin{
     font-weight: 300;
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
     color: black;
-    margin-top: -5px;
-    margin-bottom: -20px;
+    padding-top: 10px;
+    margin-bottom: -50px;
     cursor: pointer;
 }
 
-.loginRegistration > a{
+.registrationLogin > a{
     text-decoration: none;
     color: black;
+}
+
+.loginCamera{
+    top: 2%;
+    position: absolute;
+    width: 10vw;
+    height: 20vh;
+    background-color: #474435dc;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.loginCameraIcon{
+    font-size: 75px;
+    line-height: 50px;
+    color: #8f919e;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
 }
